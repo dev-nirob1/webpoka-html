@@ -215,10 +215,14 @@ ul {
   border-radius: 3rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
   margin: 3rem auto;
   background: var(--primary-color);
   width: fit-content;
+}
+
+.projects .tab-panel {
+  border-radius: 0.75rem;
 }
 
 .tab-panel li .btn {
@@ -1197,13 +1201,14 @@ ul {
 }
 
 .founder::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -200px;
   bottom: -100px;
   right: 0;
-  background: url('https://webpoka.com/front/images/background/pattern-8.png') left / cover no-repeat;
+  background: url("https://webpoka.com/front/images/background/pattern-8.png")
+    left / cover no-repeat;
   z-index: -1;
 }
 
@@ -1216,7 +1221,7 @@ ul {
 
 .founder .image::before,
 .founder .image::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 180px;
   width: 180px;
@@ -1226,14 +1231,21 @@ ul {
 .founder .image::after {
   right: -1rem;
   bottom: -1rem;
-  background: linear-gradient(to bottom, var(--primary-color), var(--highlight-color));
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--highlight-color)
+  );
 }
 
 .founder .image::before {
   top: -1rem;
   left: -1rem;
-  background: linear-gradient(to top, var(--primary-color), var(--highlight-color));
-
+  background: linear-gradient(
+    to top,
+    var(--primary-color),
+    var(--highlight-color)
+  );
 }
 
 .founder .image img {
@@ -1244,7 +1256,7 @@ ul {
 
 .founder p {
   margin-top: 0;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
 }
 
 .founder .socials {
@@ -1254,12 +1266,12 @@ ul {
   font-size: 1.5rem;
 }
 .socials li {
- height: 2.5rem;
- width: 2.5rem;
- border-radius: .25rem;
- border: 1px solid var(--border-color);
- display: grid;
- place-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+  display: grid;
+  place-content: center;
 }
 
 /* ==========TEAM SECTION ============= */
@@ -1270,7 +1282,7 @@ ul {
 /* ----------TEAM MEMBER CARD------------- */
 .member-card {
   position: relative;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
 }
 
@@ -1284,21 +1296,26 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.member-info{
+.member-info {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
   right: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background: var(--white-color);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .member-info p {
   margin: 0;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
+}
+
+/* ==========PPROJECTS SECTION ============= */
+.projects {
+  padding: 3.75rem 0;
 }
 
 @media (min-width: 576px) {
@@ -1317,6 +1334,12 @@ ul {
     --heading-3: 1.75rem;
     --heading-4: 1.5rem;
   }
+
+  /* ============TAB PANEL =============  */
+  .projects .tab-panel {
+    border-radius: 3rem;
+  }
+
   /* =========BREADCRUMB=========== */
   .breadcrumb {
     height: 60vh;
@@ -1368,7 +1391,7 @@ ul {
     max-width: 240px;
   }
 
-/* ==========FOUNDER SECTION (ABOUT US PAGE) ============= */
+  /* ==========FOUNDER SECTION (ABOUT US PAGE) ============= */
   .founder .image {
     margin: 0;
   }
