@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpoka | Reliable Software Company</title>
-    <link rel="stylesheet" href="./assets/grid.css" />
-    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="stylesheet" href="./vendor/grid.css" />
+
+    <!-- font-awesome cdn  -->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- ----------------navbar---------------- -->
     <header class="navbar">
       <nav class="flex justify-between align-center container">
-        <!-- Logo --><a
-          href="/"
-          class="router-link-active router-link-exact-active logo"
-        >
+        <!-- Logo -->
+        <a href="/" class="router-link-active router-link-exact-active logo">
           <img
-            src="http://localhost:5173/webpoka-logo-white.png"
+            src="/public/images/logo-white.png"
             alt="logo"
             class="width-full"
           />
@@ -25,10 +29,7 @@
         <div class="flex align-center gap-1">
           <ul class="nav-links">
             <li class="logo-mobile">
-              <img
-                src="http://localhost:5173/webpoka-logo-white.png"
-                alt="logo"
-              />
+              <img src="/public/images/logo-white.png" alt="logo" />
             </li>
             <li>
               <a href="/" class="router-link-active router-link-exact-active"
@@ -53,7 +54,7 @@
                 href="https://www.fiverr.com/webpoka"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img src="/fiverr.png" alt="fiverr" />Fiverr
+                ><img src="/public/images/fiverr.png" alt="fiverr" />Fiverr
               </a>
             </li>
           </ul>
@@ -95,6 +96,197 @@
       <!-- popup --><!--v-if-->
     </div>
 
+    <!-- -------------services section --------------- -->
+    <section class="services relative">
+      <!-- relative for icons position -->
+      <div class="container relative">
+        <div class="medium-2 large-3 gap-2">
+          <div class="medium-span-2">
+            <div class="section-title">
+              <h5 class="sub-title">Our Services</h5>
+              <span></span>
+              <h3 class="title">We Are Providing Digital Services</h3>
+            </div>
+          </div>
+          <!-- service card -->
+          <div class="cards">
+            <div class="service-card">
+              <div class="icon"><i class="fa-4x fa-solid fa-code"></i></div>
+              <div class="mt-2">
+                <h5 class="sub-title">Web Development</h5>
+                <p>
+                  We build fast, secure, and scalable websites and web
+                  applications tailored to your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="service-card">
+              <div class="icon">
+                <i class="fa-4x fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="mt-2">
+                <h5 class="sub-title">Strategy &amp; Planning</h5>
+                <p>
+                  Our experts craft result-driven strategies to help you
+                  innovate and achieve long-term success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="service-card">
+              <div class="icon">
+                <i class="fa-4x fa-solid fa-chart-line"></i>
+              </div>
+              <div class="mt-2">
+                <h5 class="sub-title">Market Research</h5>
+                <p>
+                  We analyze industry trends and user behavior to give your
+                  brand a competitive edge.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="service-card">
+              <div class="icon">
+                <i class="fa-4x fa-solid fa-chart-pie"></i>
+              </div>
+              <div class="mt-2">
+                <h5 class="sub-title">Growth Analytics</h5>
+                <p>
+                  Monitor performance with data-driven insights and continuous
+                  optimization for measurable results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="service-card">
+              <div class="icon">
+                <i class="fa-4x fa-solid fa-briefcase"></i>
+              </div>
+              <div class="mt-2">
+                <h5 class="sub-title">Enterprise Consulting</h5>
+                <p>
+                  We provide professional consulting to streamline operations
+                  and maximize business productivity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- animated icons  --><img
+          src="https://webpoka.com/front/images/icons/icon-1.png"
+          alt="icon"
+          class="icon-1"
+        /><img
+          src="https://webpoka.com/front/images/icons/icon-2.png"
+          alt="icon"
+          class="icon-2"
+        /><img
+          src="https://webpoka.com/front/images/icons/icon-4.png"
+          alt="icon"
+          class="icon-3"
+        />
+      </div>
+    </section>
+
+    <!-- ---------why choose us section------------------ -->
+    <section class="why-choose relative">
+      <div class="container relative">
+        <div class="large-2 gap-3">
+          <!-- content  -->
+          <div class="content">
+            <div class="section-title mb-1">
+              <h5 class="sub-title">Why Choose Us</h5>
+              <span></span>
+              <h3 class="title">Proven Benefits That Boost Your Growth</h3>
+            </div>
+            <h5 class="sub-title highlight">
+              A Satisfied Customer is Our Greatest Achievement
+            </h5>
+            <h5 class="sub-title">
+              We help businesses thrive with innovative software solutions and
+              expert guidance.
+            </h5>
+            <ul class="features">
+              <li>How can software accelerate business growth?</li>
+              <li>Why choose a dedicated development team?</li>
+              <li>What makes our solutions stand out globally?</li>
+            </ul>
+            <a href="/contact-us" class="btn btn-secondary">Get Consultation</a>
+          </div>
+          <!-- cards  -->
+          <div class="cards">
+            <div class="benefit-card">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="fa-2x fa-solid fa-dollar-sign"></i>
+                </div>
+                <div>
+                  <h5 class="sub-title">Affordable Solutions</h5>
+                  <p>
+                    We deliver high-quality software services at competitive
+                    rates to maximize your ROI.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="fa-2x fa-solid fa-headset"></i>
+                </div>
+                <div>
+                  <h5 class="sub-title">24/7 Support</h5>
+                  <p>
+                    Our dedicated support team is available around the clock to
+                    assist you with any challenges.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="card-content">
+                <div class="icon">
+                  <i class="fa-2x fa-solid fa-paper-plane"></i>
+                </div>
+                <div>
+                  <h5 class="sub-title">Fast Delivery</h5>
+                  <p>
+                    We ensure quick and efficient access to our services without
+                    compromising quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- animated icons  --><img
+          src="https://webpoka.com/front/images/icons/icon-1.png"
+          alt="icon"
+          class="icon-1"
+        /><img
+          src="https://webpoka.com/front/images/icons/icon-2.png"
+          alt="icon"
+          class="icon-2"
+        />
+      </div>
+    </section>
+
+    <!-------------------- video section ------------ -->
+    <section class="video relative">
+      <div class="video-play flex-center">
+        <div class="video-box"></div>
+        <button class="btn flex-center btn-circle">
+          <i class="fa-solid fa-play fa-2x"></i>
+        </button>
+      </div>
+      <!-- popup --><!--v-if-->
+    </section>
     <!-- -------------------foooter--------------------- -->
     <footer class="footer">
       <div class="container medium-2 large-4 gap-2 py-1 medium-py-3">
@@ -218,5 +410,7 @@
       </div>
       <!-- popup view for image --><!--v-if-->
     </footer>
+
+    <script src="/public/js/index.js"></script>
   </body>
 </html>

@@ -3,6 +3,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap");
 
+/* table of contents */
+/* 
+1. Reset
+2. Typography
+3. Utility Classes
+4. Buttons
+5. Tabs
+
+=============Common sections========================
+1. Navbar
+*/
+
 * {
   box-sizing: border-box;
 }
