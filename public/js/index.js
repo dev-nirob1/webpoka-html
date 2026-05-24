@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
     const navLinks = document.querySelector('.nav-links');
     const hamburger = document.querySelector('.hamburger');
-
     // navbar bg color change on scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
