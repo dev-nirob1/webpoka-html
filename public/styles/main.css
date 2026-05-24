@@ -453,7 +453,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 /* Logo Styles */
@@ -829,8 +829,7 @@ ul {
   bottom: 0;
   right: 0;
   left: 0;
-  background: url("https://www.webpoka.com/front/images/background/pattern-7.png")
-    left no-repeat;
+  background: url("/public/images/background/bg-7.png") left no-repeat;
   z-index: -1;
 }
 
@@ -840,10 +839,82 @@ ul {
   height: 50vh;
   margin: 0 auto;
   background:
-    url("/public/images/background/bg-6.png") center
-      no-repeat,
+    url("/public/images/background/bg-6.png") center no-repeat,
     linear-gradient(to right, var(--highlight-color), var(--primary-color));
   border-radius: 1rem;
+}
+
+/* =========== WORKING PROCESS SECTION ============ */
+.working-process {
+  padding: 3.75rem 0;
+  overflow: hidden;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.process .bg,
+.process .number::before {
+  position: absolute;
+}
+
+.process .bg {
+  inset: 0;
+  background: url("https://www.webpoka.com/front/images/resource/process-bg-1.png")
+    center no-reapet;
+  z-index: -1;
+  animation: rotateAnim 15s linear infinite;
+  background-origin: top left;
+}
+
+.process:nth-child(2),
+.process:nth-child(4) {
+  flex-direction: column-reverse;
+}
+
+.process .number {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  background: rgb(from var(--light-color) r g b / 10%);
+  font-size: 1.25rem;
+  margin-top: 70px;
+}
+
+.process .number::before {
+  content: "";
+  left: 50%;
+  top: -65px;
+  height: 65px;
+  width: 1px;
+  background: var(--primary-color);
+}
+
+.process:nth-child(2) .number,
+.process:nth-child(4) .number {
+  margin-bottom: 70px;
+}
+
+.process:nth-child(2) .number::before,
+.process:nth-child(4) .number::before {
+  top: 40px;
+}
+
+@keyframes rotateAnim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 576px) {
@@ -896,6 +967,10 @@ ul {
   .video-play {
     max-width: 800px;
     height: 60vh;
+  }
+  /* =========== WORKING PROCESS SECTION ============ */
+  .working-process .icon img {
+    max-width: 240px;
   }
 
   /* =========== FOOTER STYLES ============ */
@@ -999,6 +1074,10 @@ ul {
     max-width: 380px;
     width: 100%;
   }
+  /* =========== WORKING PROCESS SECTION ============ */
+  .working-process .icon img {
+    max-width: 200px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1027,6 +1106,10 @@ ul {
   .video-play {
     max-width: 950px;
     height: 80vh;
+  }
+  /* =========== WORKING PROCESS SECTION ============ */
+  .working-process .icon img {
+    max-width: 260px;
   }
 }
 
