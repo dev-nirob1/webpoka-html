@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Webpoka</title>
+
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="stylesheet" href="./vendor/grid.css" />
+    <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ===============NAVBAR SECTION =============== -->
+    <header class="navbar">
+      <nav class="flex justify-between align-center container">
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="router-link-active router-link-exact-active logo"
+        >
+          <img
+            src="/public/images/logo-white.png"
+            alt="logo"
+            class="width-full"
+          />
+        </a>
+        <!-- Navigation Links -->
+        <div class="flex align-center gap-1">
+          <ul class="nav-links">
+            <li class="logo-mobile">
+              <img src="/public/images/logo-white.png" alt="logo" />
+            </li>
+            <li>
+              <a
+                href="./index.html"
+                class="router-link-active router-link-exact-active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="./about.html"> About </a>
+            </li>
+            <li>
+              <a href="./projects.html" class="">Projects</a>
+            </li>
+            <li>
+              <a href="./blogs.html" class="">Blogs</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="">Contact</a>
+            </li>
+            <li>
+              <a
+                href="https://www.fiverr.com/webpoka"
+                class="fiver-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="/public/images/fiverr.png" alt="fiverr" />Fiverr
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ============BREADCRUMB=========== -->
+    <section class="breadcrumb relative">
+      <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&amp;w=870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="breadcrumb background"
+      />
+      <div class="container">
+        <h1 class="breadcrumb-title">About Us</h1>
+        <ul>
+          <li><a href="./index.html" class="router-link-active">Home</a></li>
+          <li>About</li>
+          <!--v-if-->
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============ABOUT SECTION============== -->
+    <section class="about">
+      <div class="container">
+        <div class="medium-2 gap-2">
+          <div class="image">
+            <img
+              src="https://webpoka.com/front/images/resource/about-2.png"
+              alt="image"
+            />
+          </div>
+          <div class="content">
+            <div class="section-title">
+              <h5 class="sub-title">About Us</h5>
+              <span></span>
+              <h3 class="title">Always Here to Assist You</h3>
+            </div>
+            <p class="my-1">
+              At Tecno, we specialize in building custom software solutions that
+              drive business growth. Our team ensures quality, security, and
+              timely delivery on every project.
+            </p>
+            <div class="accordion">
+              <div class="accordion-title">
+                <i class="fa-solid fa-plus"></i> Do you build software for
+                startups and enterprises?
+              </div>
+              <div class="accordion-body">
+                Yes! We cater to startups, SMEs, and large enterprises. Whether
+                you need a simple MVP to test your idea or a complex enterprise
+                system, we provide scalable solutions that meet your unique
+                requirements.
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-title">
+                <i class="fa-solid fa-plus"></i> Can I integrate your software
+                with existing systems?
+              </div>
+              <div class="accordion-body">
+                Absolutely. Our team specializes in integrating new solutions
+                with your current systems, whether it’s CRM, ERP, payment
+                gateways, or cloud services, ensuring seamless data flow and
+                consistent user experience.
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-title">
+                <i class="fa-solid fa-plus"></i> What makes your development
+                process different?
+              </div>
+              <div class="accordion-body">
+                We follow an agile, transparent, and client-focused approach.
+                From requirement analysis to deployment, we maintain open
+                communication, iterative delivery, and continuous feedback,
+                ensuring the final product exceeds expectations.
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-title">
+                <i class="fa-solid fa-plus"></i> Do you offer ongoing support
+                and updates?
+              </div>
+              <div class="accordion-body">
+                Yes, we provide post-launch support, software updates, and
+                maintenance plans. Our goal is to keep your applications secure,
+                up-to-date, and optimized for performance as your business
+                evolves.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/public/js/index.js"></script>
+  </body>
+</html>
