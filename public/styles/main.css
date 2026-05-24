@@ -1318,6 +1318,88 @@ ul {
   padding: 3.75rem 0;
 }
 
+
+/* ===============CONTACT SECTION ============= */
+.contact {
+  padding: 3.75rem 0;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  background: url('https://webpoka.com/front/images/background/pattern-5.png') right top no-repeat;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+/* -----------CONTACT INFO---------- */
+.info {
+  padding: 1rem;
+}
+.info ul {
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.info ul li {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color);
+}
+
+.info ul li i {
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info ul li p {
+  margin: 0;
+  padding-top: .25rem;
+}
+/* ------------CONTACT FORM------------ */
+form {
+padding: 1rem;
+}
+
+input,
+select,
+textarea {
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  font-size: .9rem;
+}
+
+form .btn-secondary {
+  border-radius: .5rem;
+}
+
 @media (min-width: 576px) {
   :root {
     --heading-1: 2rem;
