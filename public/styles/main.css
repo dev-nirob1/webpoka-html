@@ -21,6 +21,19 @@
 1. Home
     - Hero Section
     - Services Section
+    - Why Choose Us Section
+    - Video Section
+    - Working Process Section
+    - Pricing Section
+    - About Us Section
+    - Testimonials Section //todo
+    - Blogs Section
+    -
+2. ABOUT PAGE
+    - Breadcrumb
+    - About Us Section
+    - Founder Section
+    - Team Section
 */
 
 * {
@@ -1178,6 +1191,116 @@ ul {
   border-radius: 50%;
 }
 
+/* ==========FOUNDER SECTION ============= */
+.founder {
+  padding: 3.75rem 0;
+}
+
+.founder::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -200px;
+  bottom: -100px;
+  right: 0;
+  background: url('https://webpoka.com/front/images/background/pattern-8.png') left / cover no-repeat;
+  z-index: -1;
+}
+
+.founder .image {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.founder .image::before,
+.founder .image::after {
+  content: '';
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  z-index: -1;
+}
+
+.founder .image::after {
+  right: -1rem;
+  bottom: -1rem;
+  background: linear-gradient(to bottom, var(--primary-color), var(--highlight-color));
+}
+
+.founder .image::before {
+  top: -1rem;
+  left: -1rem;
+  background: linear-gradient(to top, var(--primary-color), var(--highlight-color));
+
+}
+
+.founder .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder p {
+  margin-top: 0;
+  padding-top: .25rem;
+}
+
+.founder .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.socials li {
+ height: 2.5rem;
+ width: 2.5rem;
+ border-radius: .25rem;
+ border: 1px solid var(--border-color);
+ display: grid;
+ place-content: center;
+}
+
+/* ==========TEAM SECTION ============= */
+.team-members {
+  padding: 3.75rem 0;
+}
+
+/* ----------TEAM MEMBER CARD------------- */
+.member-card {
+  position: relative;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+.member-card .image {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.member-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.member-info{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  border-radius: .5rem;
+  background: var(--white-color);
+  padding: .5rem 1rem;
+}
+.member-info p {
+  margin: 0;
+  padding-top: .25rem;
+}
+
 @media (min-width: 576px) {
   :root {
     --heading-1: 2rem;
@@ -1245,6 +1368,16 @@ ul {
     max-width: 240px;
   }
 
+/* ==========FOUNDER SECTION (ABOUT US PAGE) ============= */
+  .founder .image {
+    margin: 0;
+  }
+
+  .founder .image::before,
+  .founder .image::after {
+    height: 300px;
+    width: 300px;
+  }
   /* =========== FOOTER STYLES ============ */
   .footer .footer-bottom .flex {
     flex-direction: row;
