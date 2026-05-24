@@ -652,31 +652,31 @@ ul {
 }
 
 /* animated icons  */
-.icon-1,
-.icon-2,
-.icon-3 {
+.services .icon-1,
+.services .icon-2,
+.services .icon-3 {
   position: absolute;
   z-index: -1;
 }
 
-.icon-1 {
+.services .icon-1 {
   left: 4rem;
   top: 0;
   animation: spin 5s linear infinite;
 }
 
-.icon-2 {
+.services .icon-2 {
   left: 1rem;
   bottom: -3rem;
   animation: float-up-down 5s linear infinite;
 }
 
-.icon-3 {
+.services .icon-3 {
   right: 0;
   top: 5rem;
   animation: float-left-right 5s linear infinite;
 }
-
+/* todo: icon placement why choose use section  */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -713,6 +713,137 @@ ul {
   100% {
     transform: translateX(0);
   }
+}
+
+/* ---------WHY CHOOSE US SECTION -------------- */
+.why-choose {
+  padding: 9rem 0 3rem 0;
+}
+
+.why-choose::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("https://webpoka.com/front/images/background/pattern-5.png")
+    right top no-repeat;
+  top: -50px;
+  bottom: -150px;
+  right: 0;
+  z-index: -2;
+}
+
+.why-choose .highlight {
+  color: var(--highlight-color);
+  margin: 1.5rem 0;
+}
+
+.why-choose ul {
+  margin: 1.5rem 0;
+}
+
+/* --------WHY CHOOSE (BENIFIT CARD) ---------- */
+.benefit-card {
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  padding: 1.5rem 1.5rem 0;
+  border-radius: 1rem;
+}
+
+.benefit-card .icon {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 4rem;
+  padding-top: 1.5rem;
+  border-radius: 50px 50px 0 0;
+  background: var(--alternative-color);
+  text-align: center;
+  color: var(--white-color);
+}
+
+.benefit-card:nth-child(2) .icon {
+  background: var(--secondary-color);
+}
+
+.benefit-card:nth-child(3) .icon {
+  background: var(--accent-color);
+}
+
+.benefit-card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.benefit-card .card-content {
+  position: relative;
+  padding: 0 0 2rem 5.5rem;
+}
+
+.benefit-card p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--light-color);
+}
+
+/* animated icons  */
+.why-choose .icon-1,
+.why-choose .icon-2 {
+  position: absolute;
+  animation: spin 10s linear infinite;
+  z-index: -1;
+}
+
+.why-choose .icon-1 {
+  right: 3rem;
+  bottom: 5rem;
+}
+
+.why-choose .icon-2 {
+  right: 1rem;
+  top: 5rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============= VIDEO SECTION ============== */
+.video {
+  padding: 3.75rem 0;
+}
+.video .btn i {
+  opacity: 0.8;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 50%;
+  top: 5.5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url("https://www.webpoka.com/front/images/background/pattern-7.png")
+    left no-repeat;
+  z-index: -1;
+}
+
+.video-play {
+  max-width: 90%;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  background:
+    url("/public/images/background/bg-6.png") center
+      no-repeat,
+    linear-gradient(to right, var(--highlight-color), var(--primary-color));
+  border-radius: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -754,6 +885,17 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* --------WHY CHOOSE (BENIFIT CARD) ---------- */
+  .benefit-card:nth-child(2) {
+    margin-left: 5rem;
+  }
+
+  /* ============= VIDEO SECTION ============== */
+  .video-play {
+    max-width: 800px;
+    height: 60vh;
   }
 
   /* =========== FOOTER STYLES ============ */
@@ -827,26 +969,35 @@ ul {
     margin: 9rem 0 3rem 0;
   }
 
-  .icon-1 {
+  .services .icon-1 {
     left: 0;
     top: 12rem;
     animation: spin 5s linear infinite;
   }
 
-  .icon-2 {
+  .services .icon-2 {
     left: -2rem;
     bottom: 0;
     animation: float-up-down 5s linear infinite;
   }
 
-  .icon-3 {
+  .services .icon-3 {
     right: -4rem;
     top: 5rem;
     animation: float-left-right 5s linear infinite;
   }
 
-  .medium-span-2 {
+  /* .medium-span-2 {
     grid-column-end: span 1;
+  } */
+  /* --------WHY CHOOSE (BENIFIT CARD) ---------- */
+  .benefit-card {
+    padding: 2.5rem 2.5rem 0;
+  }
+
+  .benefit-card {
+    max-width: 380px;
+    width: 100%;
   }
 }
 
@@ -866,6 +1017,16 @@ ul {
 
   .cards:nth-child(5) {
     margin-top: -5rem;
+  }
+  /* --------WHY CHOOSE (BENIFIT CARD) ---------- */
+  .benefit-card {
+    max-width: 470px;
+    width: 100%;
+  }
+  /* ============= VIDEO SECTION ============== */
+  .video-play {
+    max-width: 950px;
+    height: 80vh;
   }
 }
 
