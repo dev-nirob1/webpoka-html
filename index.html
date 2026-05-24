@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <!-- ===============NAVBAR SECTION =============== -->
+    <!-- ===============NAVBAR SECTION STARTS =============== -->
     <header class="navbar">
       <nav class="flex justify-between align-center container">
         <!-- Logo -->
@@ -71,8 +71,9 @@
         </button>
       </nav>
     </header>
+    <!-- ===============NAVBAR SECTION ENDS =============== -->
 
-    <!-- ============== HERO SECTION =============== -->
+    <!-- ============== HERO SECTION STARTS =============== -->
     <div class="hero relative flex-center">
       <div class="container">
         <div class="medium-2 gap-5 medium-gap-2 align-center">
@@ -96,10 +97,10 @@
           </div>
         </div>
       </div>
-      <!-- popup --><!--v-if-->
     </div>
+    <!-- ============== HERO SECTION ENDS =============== -->
 
-    <!-- ============= SERVICES SECTION =============== -->
+    <!-- ============= SERVICES SECTION STARTS =============== -->
     <section class="services relative">
       <div class="container relative">
         <div class="medium-2 large-3 gap-2">
@@ -192,6 +193,7 @@
         />
       </div>
     </section>
+    <!-- ============= SERVICES SECTION ENDS =============== -->
 
     <!-- ============== WHY CHOOSE US SECTION =========== -->
     <section class="why-choose relative">
@@ -269,8 +271,9 @@
         <img src="./public/images/icons/icon-6.png" alt="icon" class="icon-2" />
       </div>
     </section>
+    <!-- ============= SERVICES SECTION ENDS =============== -->
 
-    <!--  =============== VIDEO SECTION=========== -->
+    <!--  =============== VIDEO SECTION STARTS=========== -->
     <section class="video relative">
       <div class="video-play flex-center">
         <div class="video-box"></div>
@@ -278,9 +281,10 @@
           <i class="fa-solid fa-play fa-2x"></i>
         </button>
       </div>
-      <!-- popup --><!--v-if-->
     </section>
-    <!--  =============== WORKING PROCESS SECTION =========== -->
+    <!--  =============== VIDEO SECTION ENDS=========== -->
+
+    <!--  =============== WORKING PROCESS SECTION START=========== -->
     <section class="working-process">
       <div class="container">
         <div class="section-title text-center mb-3">
@@ -346,8 +350,9 @@
         </div>
       </div>
     </section>
+    <!--  =============== WORKING PROCESS SECTION ENDS=========== -->
 
-    <!-- ============ PRICING SECTION ============= -->
+    <!-- ============ PRICING SECTION STARTS ============= -->
     <section class="pricing relative">
       <div class="container">
         <div class="section-title text-center">
@@ -431,16 +436,14 @@
         </div>
       </div>
     </section>
+    <!--  =============== WORKING PROCESS SECTION ENDS=========== -->
 
-    <!-- =========== ABOUT US SECTION============= -->
+    <!-- =========== ABOUT US SECTION STARTS ============= -->
     <section class="about">
       <div class="container">
         <div class="medium-2 gap-2">
           <div class="image">
-            <img
-              src="https://webpoka.com/front/images/resource/about-2.png"
-              alt="image"
-            />
+            <img src="./public/images/foreground/about.png" alt="image" />
           </div>
           <div class="content">
             <div class="section-title">
@@ -508,10 +511,12 @@
         </div>
       </div>
     </section>
+    <!-- =========== ABOUT US SECTION ENDS ============= -->
 
-    <!-- =========== TESTIMONIAL SECTION============= -->
+    <!-- =========== TESTIMONIAL SECTION STARTS============= -->
+    <!-- =========== TESTIMONIAL SECTION ENDS============= -->
 
-    <!-- =========== BLOG SECTION============= -->
+    <!-- =========== BLOG SECTION STARTS ============= -->
     <div class="blogs">
       <div class="container">
         <div class="section-title mb-2 text-center">
@@ -528,9 +533,7 @@
               />
             </div>
             <div class="blog-content">
-              <a
-                href="/blog/Top aide possible contender forced to resign over creepy."
-                class=""
+              <a href="/" class=""
                 ><h5 class="sub-title">
                   Top aide possible contender forced to resign over creepy.
                 </h5></a
@@ -555,14 +558,12 @@
           <div class="blog-card">
             <div class="image">
               <img
-                src="/public/images/foreground/news-2.jpg"
+                src="./public/images/foreground/news-2.jpg"
                 alt="blog image"
               />
             </div>
             <div class="blog-content">
-              <a
-                href="/blog/Economic growth remains steady in challenging times."
-                class=""
+              <a href="/" class=""
                 ><h5 class="sub-title">
                   Economic growth remains steady in challenging times.
                 </h5></a
@@ -592,9 +593,7 @@
               />
             </div>
             <div class="blog-content">
-              <a
-                href="/blog/Technology trends that will define the next decade."
-                class=""
+              <a href="/" class=""
                 ><h5 class="sub-title">
                   Technology trends that will define the next decade.
                 </h5></a
@@ -619,7 +618,9 @@
         </div>
       </div>
     </div>
-    <!-- =============== FOOTER SECTION =============== -->
+    <!-- =========== BLOGS SECTION ENDS ============= -->
+
+    <!-- =============== FOOTER SECTION STARTS =============== -->
     <footer class="footer">
       <div class="container medium-2 large-4 gap-2 py-1 medium-py-3">
         <!-- Footer logo and social media links -->
@@ -666,10 +667,7 @@
               />
             </div>
             <div>
-              <img
-                src="./public/images/hero-forground.png"
-                alt="gallery image"
-              />
+              <img src="./public/images/hero.png" alt="gallery image" />
             </div>
             <div>
               <img
@@ -702,43 +700,34 @@
       <div class="footer-bottom">
         <div class="container flex">
           <p>2026 © All rights reserved by Webpoka, Bangladesh</p>
-          <div
-            class="social-icon"
-            data-v-inspector="src/components/Section/FooterSection.vue:141:9"
-          >
+          <div class="social-icon">
             <a
               href="https://www.facebook.com/webpoka.bd"
               target="_blank"
               rel="noopener noreferrer"
-              data-v-inspector="src/components/Section/FooterSection.vue:142:11"
-              ><i
-                class="fab fa-facebook-f"
-                data-v-inspector="src/components/Section/FooterSection.vue:143:13"
-              ></i></a
-            ><a
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
               href="https://www.youtube.com/@webpoka"
               target="_blank"
               rel="noopener noreferrer"
-              data-v-inspector="src/components/Section/FooterSection.vue:145:11"
-              ><i
-                class="fab fa-youtube"
-                data-v-inspector="src/components/Section/FooterSection.vue:146:13"
-              ></i></a
-            ><a
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
               href="https://wa.me/01941-861014"
               target="_blank"
               rel="noopener noreferrer"
-              data-v-inspector="src/components/Section/FooterSection.vue:148:11"
-              ><i
-                class="fab fa-whatsapp"
-                data-v-inspector="src/components/Section/FooterSection.vue:149:13"
-              ></i
-            ></a>
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
           </div>
         </div>
       </div>
-      <!-- popup view for image --><!--v-if-->
     </footer>
+    <!-- =========== POPUP STARTS ============= -->
+    <!-- =========== POPUP ENDS ============= -->
 
     <script src="/public/js/index.js"></script>
   </body>

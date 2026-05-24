@@ -746,7 +746,6 @@ ul {
   top: 5rem;
   animation: float-left-right 5s linear infinite;
 }
-/* todo: icon placement why choose use section  */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -1318,12 +1317,12 @@ ul {
 .project-card {
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .project-card p {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .project-card .image {
@@ -1331,10 +1330,10 @@ ul {
   overflow: hidden;
   height: 220px;
   width: 100%;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   transition: all 1s ease-in-out;
 
-    background-position: top;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1357,7 +1356,7 @@ ul {
 } */
 
 .project-card .btn-secondary {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-top: 1rem;
 }
 /* ===============CONTACT SECTION ============= */
