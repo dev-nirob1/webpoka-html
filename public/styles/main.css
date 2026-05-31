@@ -1,47 +1,79 @@
+/* ======================================================================== 
+   1. IMPORTS & FONTS
+   ======================================================================== */
 @import "./grid.css";
 @import "./zems_slider.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap");
 
-/* table of contents */
-/* 
-1. Reset
-2. Typography
-3. Utility Classes
-4. Buttons
-5. Tabs
+/* ========================================================================
+   TABLE OF CONTENTS
+   ======================================================================== */
+/*
+   
+   1. IMPORTS & FONTS
+   2. RESET & CORE
+   3. ROOT VARIABLES
+   4. TYPOGRAPHY - Headings & Text Styles
+   5. UTILITY CLASSES
+      - Anchor Links
+      - Background Colors
+      - Text Alignment
+      - Lists
+      - Features
+      - Flexbox
+      - Section Titles
+   6. BUTTONS
+      - Basic Button Styles
+      - Tab Panel Design
+      - Primary Button
+      - Secondary Button
+      - Circle Button
+   7. COMMON SECTIONS
+      - Navbar
+      - Footer
+      - Breadcrumb
+   8. HOME PAGE
+      - Hero Section
+      - Services Section
+      - Why Choose Us Section
+      - Video Section
+      - Working Process Section
+      - Pricing Section
+      - About Us Section
+      - Testimonials Section
+      - Blogs Section
+      - Contact Section
+   9. ABOUT PAGE
+      - About Us Section
+      - Founder Section
+      - Team Section
+   10. PROJECTS PAGE
+      - Projects Section
+   11. RESPONSIVE MEDIA QUERIES
+      - Tablet (576px)
+      - Medium Devices (768px)
+      - Large Devices (992px)
+      - Extra Large (1200px)
+      - XXL Devices (1400px)
 
-=============Common sections========================
-1. Navbar
-2. Footer
-3. BREADCRUMB
-
-
-========== PAGES ===============
-1. Home
-    - Hero Section
-    - Services Section
-    - Why Choose Us Section
-    - Video Section
-    - Working Process Section
-    - Pricing Section
-    - About Us Section
-    - Testimonials Section //todo
-    - Blogs Section
-    -
-2. ABOUT PAGE
-    - Breadcrumb
-    - About Us Section
-    - Founder Section
-    - Team Section
+   ======================================================================== 
 */
 
+/* ======================================================================== 
+   2. RESET & CORE
+   ======================================================================== */
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+/* ======================================================================== 
+   3. ROOT VARIABLES - Colors, Typography, Shadows
+   ======================================================================== */
 :root {
   --body-font: "Cabin", sans-serif;
   --heading-font: "Quicksand", serif;
@@ -74,6 +106,10 @@ body {
   color: var(--dark-color);
   background-color: var(--body-bg);
 }
+
+/* ======================================================================== 
+   4. TYPOGRAPHY - Headings & Text Styles
+   ======================================================================== */
 h1,
 h2,
 h3,
@@ -111,6 +147,10 @@ h6 {
 .sub-title {
   font-size: var(--heading-5);
 }
+
+/* ======================================================================== 
+   5. UTILITY CLASSES
+   ======================================================================== */
 /* ------------------utility classes starts here-------------- */
 /* anchor color inherit  */
 a {
@@ -193,6 +233,10 @@ ul {
 .testimonials .section-title span {
   background-color: var(--accent-color);
 }
+
+/* ======================================================================== 
+   6. BUTTONS
+   ======================================================================== */
 /* button styles  */
 .btn {
   position: relative;
@@ -208,7 +252,7 @@ ul {
   line-height: 1;
 }
 
-/* tab design  */
+/* --------- Tab Panel Design --------- */
 
 .tab-panel {
   padding: 0.25rem;
@@ -314,6 +358,7 @@ ul {
   animation: ripple 2s infinite;
 }
 
+/* Ripple animation effect for circle button */
 @keyframes ripple {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
@@ -413,7 +458,10 @@ ul {
   padding-left: 1rem;
 }
 
-/* -------------NAVBAR STYLES---------------- */
+/* ======================================================================== 
+   7. COMMON SECTIONS - Navbar, Footer, Breadcrumb
+   ======================================================================== */
+/* --------- NAVBAR STYLES --------- */
 .navbar.scrolling {
   background: var(--primary-color);
   padding: 0.75rem 0;
@@ -508,7 +556,7 @@ ul {
   justify-content: center;
 }
 
-/* ======= FOOTER STYLES ========= */
+/* --------- FOOTER STYLES --------- */
 .footer {
   position: relative;
   color: var(--light-color);
@@ -621,7 +669,9 @@ ul {
   place-content: center;
 }
 
-/* ============= HOME PAGE ============= */
+/* ======================================================================== 
+   8. HOME PAGE SECTIONS
+   ======================================================================== */
 /* -------HERO SECTION --------- */
 .hero {
   min-height: 100vh;
@@ -931,9 +981,6 @@ ul {
 }
 
 .process .bg {
-  inset: 0;
-  background: url("https://www.webpoka.com/front/images/resource/process-bg-1.png")
-    center no-reapet;
   z-index: -1;
   animation: rotateAnim 15s linear infinite;
   background-origin: top left;
@@ -1139,6 +1186,72 @@ ul {
   max-height: 500px;
 }
 
+/* ==========TESTIMONIAL SECTION ============= */
+.testimonials {
+  padding: 3.75rem 0;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/public/images/background/bg-9.png") center no-repeat;
+  z-index: -1;
+}
+
+/* -------TESTIMONIAL CARD----------  */
+.testimonial-card {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: var(--white-color);
+  border: var(--border-color) 1px solid;
+  height: 100%;
+}
+.testimonial-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.testimonial-card .badge {
+  padding: 0.15rem 0.75rem;
+  background: #59c65d;
+  color: var(--white-color);
+  border-radius: 1rem;
+}
+
+.testimonial-card .stars i {
+  color: var(--accent-color);
+}
+
+.testimonial-card .sub-title {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.testimonial-card img {
+  height: 3.5rem;
+  width: 3.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.bg-graphic {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  opacity: 0.1;
+}
+
+.testimonial-card .quote {
+  font-size: 1.15rem;
+}
+
 /* ==========BLOGS SECTION ============= */
 .blogs {
   padding: 3.75rem 0;
@@ -1192,7 +1305,10 @@ ul {
   border-radius: 50%;
 }
 
-/* ==========FOUNDER SECTION ============= */
+/* ======================================================================== 
+   9. ABOUT PAGE SECTIONS
+   ======================================================================== */
+/* --------- FOUNDER SECTION --------- */
 .founder {
   padding: 3.75rem 0;
 }
@@ -1270,7 +1386,7 @@ ul {
   place-content: center;
 }
 
-/* ==========TEAM SECTION ============= */
+/* --------- TEAM SECTION --------- */
 .team-members {
   padding: 3.75rem 0;
 }
@@ -1309,7 +1425,9 @@ ul {
   padding-top: 0.25rem;
 }
 
-/* ==========PPROJECTS SECTION ============= */
+/* ======================================================================== 
+   10. PROJECTS PAGE SECTION
+   ======================================================================== */
 .projects {
   padding: 3.75rem 0;
 }
@@ -1359,7 +1477,8 @@ ul {
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
-/* ===============CONTACT SECTION ============= */
+
+/* --------- CONTACT SECTION --------- */
 .contact {
   padding: 3.75rem 0;
 }
@@ -1440,6 +1559,10 @@ form .btn-secondary {
   border-radius: 0.5rem;
 }
 
+/* ======================================================================== 
+   11. RESPONSIVE MEDIA QUERIES
+   ======================================================================== */
+/* --------- Small Devices: 576px and up --------- */
 @media (min-width: 576px) {
   :root {
     --heading-1: 2rem;
@@ -1449,6 +1572,7 @@ form .btn-secondary {
   }
 }
 
+/* --------- Medium Devices: 768px and up --------- */
 @media (min-width: 768px) {
   :root {
     --heading-1: 2.25rem;
@@ -1533,6 +1657,7 @@ form .btn-secondary {
   }
 }
 
+/* --------- Large Devices: 992px and up --------- */
 @media (min-width: 992px) {
   :root {
     --heading-1: 3rem;
@@ -1628,6 +1753,22 @@ form .btn-secondary {
   .working-process .icon img {
     max-width: 200px;
   }
+
+  /* =========== TESTIMONIAL SECTION ============ */
+  .testimonials::before {
+    top: -50px;
+    left: -100px;
+  }
+
+  /* -------TESTIMONIAL CARD----------  */
+  .testimonial-card {
+    padding: 3rem 3rem 2rem 3rem;
+  }
+
+  .testimonial-card p,
+  .testimonial-card span {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1663,6 +1804,7 @@ form .btn-secondary {
   }
 }
 
+/* --------- XXL Devices: 1400px and up --------- */
 @media (min-width: 1400px) {
   :root {
     --heading-1: 3rem;
