@@ -87,7 +87,7 @@
               We build modern web, mobile, and cloud applications for businesses
               and startups across the globe.
             </p>
-             <!-- popup-btn class is only for triggering the popup( works only in html, js not vue.js) -->
+            <!-- popup-btn class is only for triggering the popup( works only in html, js not vue.js) -->
             <button class="btn btn-primary popup-btn">
               Watch Video <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -728,10 +728,12 @@
           <h5 class="sub-title">Support</h5>
           <ul class="footer-links">
             <li>
-              <a aria-current="page"
+              <a
+                aria-current="page"
                 href="/"
                 class="router-link-active router-link-exact-active"
-                >Home</a>
+                >Home</a
+              >
             </li>
             <li><a href="/about-us" class="">About Us</a></li>
             <li><a href="/projects" class="">Projects</a></li>
@@ -745,37 +747,42 @@
           <div class="all-3 gap-1">
             <div>
               <img
-              class="image-popup"
+                class="image-popup"
                 src="https://portfolio.webpoka.com/projects/landing_page/events/events.avif"
                 alt="gallery image"
               />
             </div>
             <div>
-              <img class="image-popup"
+              <img
+                class="image-popup"
                 src="https://portfolio.webpoka.com/projects/landing_page/renovation/renovation.avif"
                 alt="gallery image"
               />
             </div>
             <div>
-              <img class="image-popup"
+              <img
+                class="image-popup"
                 src="https://portfolio.webpoka.com/projects/landing_page/cryptocoin/cryptocoin.avif"
                 alt="gallery image"
               />
             </div>
             <div>
-              <img class="image-popup"
+              <img
+                class="image-popup"
                 src="https://portfolio.webpoka.com/projects/landing_page/vesco/vesco.avif"
                 alt="gallery image"
               />
             </div>
             <div>
-              <img class="image-popup"
+              <img
+                class="image-popup"
                 src="https://portfolio.webpoka.com/projects/landing_page/xocondos/xocondos.avif"
                 alt="gallery image"
               />
             </div>
             <div>
-              <img class="image-popup"
+              <img
+                class="image-popup"
                 src="https://portfolio.webpoka.com/projects/landing_page/chainese/chainese.avif"
                 alt="gallery image"
               />
@@ -815,9 +822,11 @@
     </footer>
 
     <!-- =========== POPUP STARTS ============= -->
-    <div id='popup' class="video-modal flex-center">
+    <div id="popup" class="video-modal flex-center">
       <div class="modal-content">
-        <button id="popup-close" class="btn video-close"><i class="fa-solid fa-x"></i></button>
+        <button id="popup-close" class="btn video-close">
+          <i class="fa-solid fa-x"></i>
+        </button>
         <div class="width-full height-full">
           <iframe
             src="https://www.youtube.com/embed/NrgkeOR_g5E"
@@ -840,7 +849,24 @@
     <!-- =========== POPUP ENDS ============= -->
 
     <!-- =========== IMAGE POPUP STARTS ============= -->
-     <div class="modal"><div class="modal-content flex-center"><button class="btn btn-prev"><i class="fa-solid fa-arrow-left"></i></button><button class="btn btn-next"><i class="fa-solid fa-arrow-right"></i></button><div class="modal-details"><div class="image"><img src="https://portfolio.webpoka.com/projects/landing_page/vesco/vesco.avif"></div></div><button class="btn close-btn"><i class="fa-solid fa-xmark"></i></button></div></div>
+    <div class="modal">
+      <div class="modal-content flex-center">
+        <button class="btn btn-prev">
+          <i class="fa-solid fa-arrow-left"></i></button
+        ><button class="btn btn-next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div class="modal-details">
+          <div class="image">
+            <img
+              src="https://portfolio.webpoka.com/projects/landing_page/vesco/vesco.avif"
+            />
+          </div>
+        </div>
+        <!-- popup-btn class is only for triggering the image modal( works only in html, js not vue.js) -->
+        <button class="btn close-btn image-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
     <!-- =========== IMAGE POPUP ENDS ============= -->
 
     <script src="/public/js/index.js"></script>
