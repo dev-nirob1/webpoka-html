@@ -87,7 +87,8 @@
               We build modern web, mobile, and cloud applications for businesses
               and startups across the globe.
             </p>
-            <button class="btn btn-primary">
+             <!-- popup-btn class is only for triggering the popup( works only in html, js not vue.js) -->
+            <button class="btn btn-primary popup-btn">
               Watch Video <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -277,7 +278,8 @@
     <section class="video relative">
       <div class="video-play flex-center">
         <div class="video-box"></div>
-        <button class="btn flex-center btn-circle">
+        <!-- popup-btn class is only for triggering the popup( works only in html, js not vue.js) -->
+        <button class="btn flex-center btn-circle popup-btn">
           <i class="fa-solid fa-play fa-2x"></i>
         </button>
       </div>
@@ -812,7 +814,30 @@
         </div>
       </div>
     </footer>
+
     <!-- =========== POPUP STARTS ============= -->
+    <div id='popup' class="video-modal flex-center">
+      <div class="modal-content">
+        <button id="popup-close" class="btn video-close"><i class="fa-solid fa-x"></i></button>
+        <div class="width-full height-full">
+          <iframe
+            src="https://www.youtube.com/embed/NrgkeOR_g5E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen=""
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
     <!-- =========== POPUP ENDS ============= -->
 
     <script src="/public/js/index.js"></script>

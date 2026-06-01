@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
     const navLinks = document.querySelector('.nav-links');
     const hamburger = document.querySelector('.hamburger');
+
+    const popup = document.getElementById('popup');
+    const openPopupBtns = document.querySelectorAll('.popup-btn');
+    const popupCloseBtn = document.getElementById('popup-close');
+
+    // popup toggle
+    popup.style.display = 'none'; // hide popup on page load
+    openPopupBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+    });
+
+    popupCloseBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
     // navbar bg color change on scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
@@ -35,3 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
