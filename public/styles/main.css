@@ -668,7 +668,7 @@ ul {
   display: grid;
   place-content: center;
 }
-/* --------- POPUP STYLES --------- */
+/* ---------VIDEO POPUP STYLES --------- */
 .video-modal {
   position: fixed;
   inset: 0;
@@ -710,6 +710,57 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* ---------IMAGE POPUP STYLES --------- */
+.modal {
+  position: relative;
+}
+.modal .modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+.modal .btn {
+  position: fixed;
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: .25rem;
+  border: none;
+}
+
+.modal .btn-prev,
+.modal .btn-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal .btn-prev {
+  left: 1rem;
+}
+.modal .btn-next {
+  right: 1rem;
+}
+.modal .close-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+.modal .modal-details {
+  height: 70vh;
+  width: 80vw;
+}
+.modal .modal-details .image {
+  height: 100%;
+  width: 100%;
+}
+.modal .modal-details img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ======================================================================== 
@@ -1698,10 +1749,15 @@ form .btn-secondary {
   .footer .logo img {
     width: auto;
   }
-  /* =========== POPUP STYLES ============ */
+  /* =========== VIDEO POPUP STYLES ============ */
   .modal-content {
     height: 80vh;
     width: 60vw;
+  }
+  /* =========== IMAGE VIEWER POPUP STYLES ============ */
+    .modal .modal-details {
+    height: 60vh;
+    width: 40vw;
   }
 }
 
