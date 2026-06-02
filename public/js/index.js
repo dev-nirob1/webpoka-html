@@ -1,104 +1,35 @@
-/* ========================================================================
-   WEBPOKA - Main JavaScript File
-   ======================================================================== */
 
-// ========================================================================
-// GLOBAL VARIABLES
-// ========================================================================
+// ========GLOBAL VARIABLES
 let isMenuOpen = false;
 
-// ========================================================================
-// UTILITY FUNCTIONS
-// ========================================================================
+// =====HAMBURGER FUNCTION
 const toggleMenu = () => {
-    isMenuOpen = !isMenuOpen;
+isMenuOpen = !isMenuOpen;
 };
 
-// ========================================================================
-// NAVBAR SCROLL EFFECT
-// ========================================================================
-// Add background color to navbar when user scrolls down
+// NAVBAR SCROLL EFFECT (SAFE)
 const navbar = document.querySelector('.navbar');
+
+if (navbar) {
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolling');
-    } else {
-        navbar.classList.remove('scrolling');
-    }
+if (window.scrollY > 50) {
+navbar.classList.add('scrolling');
+} else {
+navbar.classList.remove('scrolling');
+}
 });
+}
 
-// ========================================================================
-// DOM CONTENT LOADED - Initialize all event listeners
-// ========================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // ====================================================================
-    // NAVBAR ELEMENTS
-    // ====================================================================
-    const navLinks = document.querySelector('.nav-links');
-    const hamburger = document.querySelector('.hamburger');
 
-    // ====================================================================
-    // VIDEO POPUP MODAL
-    // ====================================================================
-    const popup = document.getElementById('popup');
-    const openPopupBtns = document.querySelectorAll('.popup-btn');
-    const popupCloseBtn = document.getElementById('popup-close');
+// ================= NAVBAR =================
+const navLinks = document.querySelector('.nav-links');
+const hamburger = document.querySelector('.hamburger');
 
-    // Hide popup on page load
-    popup.style.display = 'none';
-    
-    // Open popup - click on any popup button
-    openPopupBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            popup.style.display = 'flex';
-        });
-    });
-
-    // Close popup - click on close button
-    popupCloseBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
-    });
-
-    // ====================================================================
-    // IMAGE VIEWER MODAL
-    // ====================================================================
-    const imageBtn = document.querySelectorAll('.image-popup');
-    const imageCloseBtn = document.querySelector('.image-close');
-    const modal = document.querySelector('.modal');
-
-    // Hide image modal on page load
-    modal.style.display = 'none';
-    
-    // Close image modal - click on close button
-    imageCloseBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-    
-    // Open image modal - click on any image popup button
-    imageBtn.forEach(btn => {
-        btn.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
-    });
-
-    // ====================================================================
-    // ACCORDION TOGGLE
-    // ====================================================================
-    const accordionTitles = document.querySelectorAll('.accordion-title');
-    
-    accordionTitles.forEach(title => {
-        title.addEventListener('click', () => {
-            const body = title.nextElementSibling;
-            body.classList.toggle('active');
-        });
-    });
-
-    // ====================================================================
-    // MOBILE MENU TOGGLE (Hamburger Menu)
-    // ====================================================================
+if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
         toggleMenu();
+
         if (isMenuOpen) {
             navLinks.classList.add('active');
             hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
@@ -108,14 +39,68 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ====================================================================
-    // CLOSE MOBILE MENU ON NAV LINK CLICK
-    // ====================================================================
-    navLinks.childNodes.forEach(element => {
-        element.addEventListener('click', () => {
+    // Close menu on link click 
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
             isMenuOpen = false;
+            navLinks.classList.remove('active');
+            hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
         });
     });
+}
 
+// ================= VIDEO POPUP =================
+const popup = document.getElementById('popup');
+const openPopupBtns = document.querySelectorAll('.popup-btn');
+const popupCloseBtn = document.getElementById('popup-close');
+
+if (popup) {
+    popup.style.display = 'none';
+}
+
+if (popup && popupCloseBtn) {
+    popupCloseBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+}
+
+openPopupBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (popup) popup.style.display = 'flex';
+    });
 });
 
+// ================= IMAGE MODAL =================
+const imageBtns = document.querySelectorAll('.image-popup');
+const imageCloseBtn = document.querySelector('.image-close');
+const modal = document.querySelector('.modal');
+
+if (modal) {
+    modal.style.display = 'none';
+}
+
+if (imageCloseBtn && modal) {
+    imageCloseBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
+
+imageBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (modal) modal.style.display = 'flex';
+    });
+});
+
+// ================= ACCORDION =================
+const accordionTitles = document.querySelectorAll('.accordion-title');
+
+accordionTitles.forEach(title => {
+    title.addEventListener('click', () => {
+        const body = title.nextElementSibling;
+        // console.log(body)
+        if (body) {
+            body.classList.toggle('active');
+        }
+    });
+});
+});

@@ -1,8 +1,6 @@
 /* ======================================================================== 
    1. IMPORTS & FONTS
    ======================================================================== */
-@import "./grid.css";
-@import "./zems_slider.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap");
 
@@ -1270,14 +1268,14 @@ iframe {
 
 .accordion-body {
   padding: 0;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .accordion-body.active {
   padding: 0.25rem 1rem;
-  max-height: 500px;
+  height: auto;
 }
 
 /* ==========TESTIMONIAL SECTION ============= */
