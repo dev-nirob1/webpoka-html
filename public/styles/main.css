@@ -563,7 +563,7 @@ ul {
 
 .footer::after {
   content: "";
-  background: url("./images/background/bg-5.jpg") right no-repeat;
+  background: url("./../images/background/bg-5.jpg") right no-repeat;
   position: absolute;
   top: -400px;
   left: 0;
@@ -775,7 +775,7 @@ iframe {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./images/background/bg-3.png") bottom / cover no-repeat;
+  background: url("./../images/background/bg-3.png") bottom / cover no-repeat;
   z-index: -1;
 }
 
@@ -793,7 +793,7 @@ iframe {
 .services::before {
   content: "";
   position: absolute;
-  background: url("./images/background/bg-4.png") left top no-repeat;
+  background: url("./../images/background/bg-4.png") left top no-repeat;
   top: 0;
   bottom: -250px;
   left: 0;
@@ -935,7 +935,7 @@ iframe {
   content: "";
   position: absolute;
   left: 0;
-  background: url("./images/background/bg-5.png") right top no-repeat;
+  background: url("./../images/background/bg-5.png") right top no-repeat;
   top: -50px;
   bottom: -150px;
   right: 0;
@@ -1039,7 +1039,7 @@ iframe {
   bottom: 0;
   right: 0;
   left: 0;
-  background: url("./images/background/bg-7.png") left no-repeat;
+  background: url("./../images/background/bg-7.png") left no-repeat;
   z-index: -1;
 }
 
@@ -1049,7 +1049,7 @@ iframe {
   height: 50vh;
   margin: 0 auto;
   background:
-    url("./images/background/bg-6.png") center no-repeat,
+    url("./../images/background/bg-6.png") center no-repeat,
     linear-gradient(to right, var(--highlight-color), var(--primary-color));
   border-radius: 1rem;
 }
@@ -1136,7 +1136,7 @@ iframe {
   top: -100px;
   bottom: -200px;
   right: 0;
-  background: url("./images/background/bg-5.png") left / cover no-repeat;
+  background: url("./../images/background/bg-8.png") left / cover no-repeat;
   z-index: -1;
 }
 /* ============ PRICING CARD =============  */
@@ -1290,7 +1290,7 @@ iframe {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("./images/background/bg-9.png") center no-repeat;
+  background: url("./../images/background/bg-9.png") center no-repeat;
   z-index: -1;
 }
 
@@ -1412,7 +1412,7 @@ iframe {
   top: -200px;
   bottom: -100px;
   right: 0;
-  background: url("./images/background/bg-8.png") left / cover no-repeat;
+  background: url("./../images/background/bg-8.png") left / cover no-repeat;
   z-index: -1;
 }
 
@@ -1578,7 +1578,7 @@ iframe {
 .contact::after {
   content: "";
   position: absolute;
-  background: url("./images/background/bg-5.png") right top no-repeat;
+  background: url("./../images/background/bg-5.png") right top no-repeat;
   bottom: 0;
   top: 0;
   right: 0;
